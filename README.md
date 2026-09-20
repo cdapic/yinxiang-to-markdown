@@ -1,8 +1,8 @@
 # yinxiang-to-markdown
 
-A standalone CLI that exports the local library of the macOS **印象笔记 (Yinxiang)** desktop client into one Markdown file per note, with optional Obsidian-friendly YAML frontmatter and attachments.
+把 macOS 版 **印象笔记（中国版）** 的本地库导出为 Markdown：一条笔记一个 `.md` 文件，可选 Obsidian 风格的 YAML frontmatter，图片与附件自动复制。纯 Python 3，零第三方依赖，全程只读源库。
 
-> Convert the local, plaintext Yinxiang library into portable Markdown — without depending on the ENEX export (which on the macOS Chinese client encrypts every note body and is unusable by third-party tools).
+> 直接读本地明文库转换，不依赖官方 ENEX 导出——印象笔记中国版 Mac 客户端导出的 `.enex` 里，每条笔记正文都是 AES 加密块（`<content encoding="base64:aes">`），第三方工具（含 Obsidian Importer）一律读不了。
 
 ---
 
